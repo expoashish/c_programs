@@ -1,24 +1,24 @@
-#include <stdio.h>
-
-struct student
-{
-	int id;
-	char name[20];
-	int rollno;
-}s;
-
+#include<stdio.h>
 int main(){
-	printf("Enter student id:\n");
-	scanf("%d",&s.id);
-	printf("Enter student name:\n");
-	scanf("%s",s.name);
-	printf("Enter stude] rollno:\n");
-    scanf("%d",&s.rollno);
+   struct employee
+   {
+      int emp_no;
+      char name[30];
+      float destination[20];
+      char deptt[30];
+   }emp;
+   printf("Enter emp_no:\n");
+   scanf("%d",&emp.emp_no);
+   printf("Enter name:\n");
+   scanf("%s",emp.name);
+   printf("Enter destination :\n");
+   scanf("%f",emp.destination);
+   printf("Enter deptt:\n");
+   scanf("%s",emp.deptt);
 
-    
-	printf("Displaying Information of the student:\n");
-    printf("Id : %d\n",s.id);
-    printf("Name:%s\n",s.name);
-    printf("Roll NO:%d\n",s.rollno);
-	return 0;
+   printf("\nEmp_no:%d\n",emp.emp_no);
+   printf("Name:%s\n",emp.name);
+   printf("Destination:%f\n",*emp.destination);
+   printf("Department:%s\n",emp.deptt);
+   return 0;
 }
